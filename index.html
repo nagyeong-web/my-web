@@ -10,68 +10,55 @@
       margin: 0;
       padding: 0;
       background-color: #ffffff;
-      color: #000000;
+      color: #222;
     }
 
     .container {
-      width: 80%;
-      margin: 0 auto;
-      padding: 40px 0;
+      width: 900px;
+      margin: 60px auto;
     }
 
-    /* Header */
-    .header {
+    /* Main title */
+    .main-title {
       text-align: center;
-      margin-bottom: 40px;
-    }
-
-    .header h1 {
-      font-size: 36px;
+      font-size: 42px;
+      font-weight: bold;
       margin-bottom: 10px;
     }
 
-    .header p {
+    .subtitle {
+      text-align: center;
       font-size: 16px;
-      color: #555;
-    }
-
-    /* Profile */
-    .profile {
+      color: #666;
       margin-bottom: 50px;
     }
 
-    .profile p {
-      font-size: 15px;
-      line-height: 1.8;
-    }
-
-    /* Section title */
+    /* Section title + line */
     .section-title {
-      font-size: 22px;
+      font-size: 26px;
       font-weight: bold;
-      margin-top: 50px;
+      color: #3FE87F;
+      margin-top: 60px;
       margin-bottom: 10px;
     }
 
     .divider {
-      border-bottom: 1px solid #000;
-      margin-bottom: 20px;
+      border: none;
+      border-top: 3px solid #3FE87F;
+      margin-bottom: 25px;
     }
 
-    /* Content text */
-    .content p {
-      font-size: 15px;
-      line-height: 1.8;
-      margin-bottom: 15px;
+    .content {
+      line-height: 1.7;
+      margin-left: 10px;
     }
 
-    .content .item-title {
-      font-weight: bold;
+    .item {
+      margin-bottom: 25px;
     }
 
     .authors {
-      margin-top: 5px;
-      margin-bottom: 20px;
+      font-style: italic;
     }
   </style>
 </head>
@@ -80,130 +67,128 @@
   <div class="container">
 
     <!-- Header -->
-    <div class="header">
-      <h1>Nagyeong's Web</h1>
-      <p>About Nagyeong</p>
-    </div>
+    <div class="main-title">Nagyeong's Web</div>
+    <div class="subtitle">About Nagyeong</div>
 
     <!-- Profile -->
-    <div class="profile">
-      <p><strong>Name:</strong> Na-Gyeong Kang</p>
-      <p><strong>Birth:</strong> 2000.11.14</p>
-      <p><strong>Email:</strong> nagyeong00@naver.com</p>
-      <p><strong>Contact:</strong> 010-9242-2503</p>
+    <div class="section-title">Profile</div>
+    <hr class="divider">
+    <div class="content">
+      Name: Na-Gyeong Kang<br>
+      Research area: Metal ALD 
+      Email: (your email here)<br>
+      Affiliation: Hanyang University
     </div>
 
     <!-- Education -->
     <div class="section-title">Education</div>
-    <div class="divider"></div>
+    <hr class="divider">
     <div class="content">
-      <p class="item-title">
-        M.S. & Ph.D. Integrated Course in Materials Science and Chemical Engineering (2023.03 - )
-      </p>
-      <p>Hanyang University, Ansan, Korea</p>
-      <p>Research advisor : Professor Ji-Hoon Ahn</p>
 
-      <p class="item-title">
-        B.S. in Department of Materials Science and Chemical Engineering (2019.03 - 2023.02)
-      </p>
-      <p>Hanyang University, Ansan, Korea</p>
+      <div class="item">
+        <strong>M.S. & Ph.D. Integrated Course in Materials Science and Chemical Engineering</strong> (2023.03 - )<br>
+        Hanyang University, Ansan, Korea<br>
+        Research advisor : Professor Ji-Hoon Ahn
+      </div>
+
+      <div class="item">
+        <strong>B.S. in Department of Materials Science and Chemical Engineering</strong> (2019.03 - 2023.02)<br>
+        Hanyang University, Ansan, Korea
+      </div>
+
     </div>
 
     <!-- Publications -->
     <div class="section-title">Publications</div>
-    <div class="divider"></div>
+    <hr class="divider">
     <div class="content">
 
-      <p class="item-title">
-        4. Atomic Layer Deposition of Ru Using a New Zero-Valent Ru Precursor with a Ligand System Combining Open and Closed Ligands
-      </p>
-      <p>Journal of Materials Chemistry C, Accepted (2025).</p>
-      <p class="authors">
-        Na-Gyeong Kang, Min-Ji Ha, Eun-Su Chung, Chang Mo Yoon, Jin-Sik Kim, Yoon-A Park, Ji-Hoon Ahn*
-      </p>
+      <div class="item">
+        4. "Atomic Layer Deposition of Ru Using a New Zero-Valent Ru Precursor with a Ligand System Combining Open and Closed Ligands"<br>
+        <em>Journal of Materials Chemistry C</em>, Accepted (2025). [link]<br>
+        <span class="authors">
+          Na-Gyeong Kang, Min-Ji Ha, Eun-Su Chung, Chang Mo Yoon, Jin-Sik Kim, 
+          Yoon-A Park, Ji-Hoon Ahn*
+        </span>
+      </div>
 
-      <p class="item-title">
-        3. Effect of H2/N2 ratio on molybdenum nitride thin films deposited by plasma-enhanced atomic layer deposition: Applications for next-generation interconnects
-      </p>
-      <p>ACS Applied Nano Materials, 8(25), 13130–13138 (2025).</p>
-      <p class="authors">
-        Min-Ji Ha, Na-Gyeong Kang, Eun-Su Chung, Ji-Hoon Ahn*
-      </p>
+      <div class="item">
+        3. "Effect of H2/N2 ratio on molybdenum nitride thin films deposited by plasma-enhanced atomic layer deposition"<br>
+        <em>ACS Applied Nano Materials</em>, 8(25), 13130-13138 (2025).<br>
+        <span class="authors">
+          Min-Ji Ha, Na-Gyeong Kang, Eun-Su Chung, Ji-Hoon Ahn*
+        </span>
+      </div>
 
-      <p class="item-title">
-        2. Ultrathin metal films with low resistivity via atomic layer deposition: Process pressure effect on initial growth behavior of Ru films
-      </p>
-      <p>Chemistry of Materials, 36(17), 8496–8503 (2024).</p>
-      <p class="authors">
-        Na-Gyeong Kang, Min-Ji Ha, Ji-Hoon Ahn*
-      </p>
+      <div class="item">
+        2. "Ultrathin metal films with low resistivity via atomic layer deposition"<br>
+        <em>Chemistry of Materials</em>, 36(17), 8496-8503 (2024).<br>
+        <span class="authors">
+          Na-Gyeong Kang, Min-Ji Ha, Ji-Hoon Ahn*
+        </span>
+      </div>
 
-      <p class="item-title">
-        1. Low-resistivity molybdenum-carbide thin films formed by thermal atomic layer deposition with pressure-assisted decomposition
-      </p>
-      <p>Journal of Vacuum Science & Technology A, 42(4), 042401 (2024).</p>
-      <p class="authors">
-        Min-Ji Ha, Na-Gyeong Kang, Woo-Hee Kim, Tae Joo Park, Tae-Eon Park, Ji-Hoon Ahn*
-      </p>
+      <div class="item">
+        1. "Low-resistivity molybdenum-carbide thin films formed by thermal atomic layer deposition"<br>
+        <em>Journal of Vacuum Science & Technology A</em>, 42(4), 042401 (2024).<br>
+        <span class="authors">
+          Min-Ji Ha, Na-Gyeong Kang, Woo-Hee Kim, Tae Joo Park,
+          Tae-Eon Park, Ji-Hoon Ahn*
+        </span>
+      </div>
+
     </div>
 
     <!-- Patent -->
     <div class="section-title">Patent</div>
-    <div class="divider"></div>
+    <hr class="divider">
     <div class="content">
-      <p class="item-title">
-        2. 백금계 금속을 포함하는 박막, 및 그 제조 방법
-      </p>
-      <p>10-2024-0057361, Korea</p>
-      <p class="authors">안지훈, 강나경, 하민지</p>
 
-      <p class="item-title">
-        1. 몰리브덴 탄화물을 포함하는 박막, 및 그 제조 방법
-      </p>
-      <p>10-2024-0054508, Korea</p>
-      <p class="authors">안지훈, 하민지, 강나경</p>
+      <div class="item">
+        2. "백금계 금속을 포함하는 박막, 및 그 제조 방법"<br>
+        10-2024-0057361, Korea<br>
+        안지훈, 강나경, 하민지
+      </div>
+
+      <div class="item">
+        1. "몰리브덴 탄화물을 포함하는 박막, 및 그 제조 방법"<br>
+        10-2024-0054508, Korea<br>
+        안지훈, 하민지, 강나경
+      </div>
+
     </div>
 
     <!-- Conferences -->
     <div class="section-title">Conferences</div>
-    <div class="divider"></div>
+    <hr class="divider">
     <div class="content">
 
-      <p class="item-title">
-        4. Atomic Layer Deposition of Ru Thin Films Using a New Ru Precursor (Domestic)
-      </p>
-      <p>The 32nd Korean Conference in Semiconductors (KCS 2025), Korea</p>
-      <p class="authors">
+      <div class="item">
+        4. "Atomic Layer Deposition of Ru Thin Films Using a New Ru Precursor" - Domestic<br>
+        The 32nd Korean Conference in Semiconductors (KCS 2025), Korea<br>
         Na-Gyeong Kang, Min-Ji Ha, Eun-Su Chung, Ji-Hoon Ahn*
-      </p>
+      </div>
 
-      <p class="item-title">
-        3. Ultrathin Metal Films with Low Resistivity via Atomic Layer Deposition (International)
-      </p>
-      <p>KISM 2024, Korea</p>
-      <p class="authors">
+      <div class="item">
+        3. "Ultrathin Metal Films with Low Resistivity via Atomic Layer Deposition" - International<br>
+        KISM 2024, Korea<br>
         Na-Gyeong Kang, Min-Ji Ha, Ji-Hoon Ahn*
-      </p>
+      </div>
 
-      <p class="item-title">
-        2. The Effect of Process Pressure on Improving Resistivity of Ru Thin Films (Domestic)
-      </p>
-      <p>KCS 2024, Korea</p>
-      <p class="authors">
+      <div class="item">
+        2. "The Effect of Process Pressure on Improving Resistivity of Ru Thin Films" - Domestic<br>
+        KCS 2024, Korea<br>
         Na-Gyeong Kang, Min-Ji Ha, Ji-Hoon Ahn*
-      </p>
+      </div>
 
-      <p class="item-title">
-        1. Optimized Electrical Properties of Molybdenum Thin Films Deposited by ALD (International)
-      </p>
-      <p>ICAE 2023, Korea</p>
-      <p class="authors">
+      <div class="item">
+        1. "Optimized Electrical Properties of Molybdenum Thin Films" - International<br>
+        ICAE 2023, Korea<br>
         Na-Gyeong Kang, Min-Ji Ha, Ji-Hoon Ahn*
-      </p>
+      </div>
 
     </div>
 
   </div>
 </body>
 </html>
-
